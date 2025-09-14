@@ -1,0 +1,47 @@
+.movieCard{
+	height:350px;
+	overflow:hidden;
+	position:relative;
+}
+.movieCard img{
+	height:100%;
+	width:100%;
+	object-fit:cover;
+}
+.titleInfo{
+	position:absolute;
+	left:0;
+	bottom:0;
+	background-color:#22254b;
+	width:100%;
+	color:#fff;
+	padding:10px;
+}
+.overview{
+	position:absolute;
+	top:30%;
+	left:0;
+	height:70%;
+	padding:15px;
+	width:100%;
+	background-color:pink;
+	transform:translateY(100%);
+	opacity:0;
+	transition:all .4s ease-in-out;
+}
+.movieCard:is(:hover,:focus,:active) .overview{
+	transform:translateY(0%);
+	opacity:1;
+}
+#movieContainer .card{
+	overflow:hidden;
+	height:350px;
+}
+.titleInfo h2{
+	height:40px;
+	margin:0;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
